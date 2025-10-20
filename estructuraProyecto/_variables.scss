@@ -1,0 +1,30 @@
+/* VARIABLES DE COLOR */
+$color-primary: #6c63ff; // violeta
+$color-secondary: #F5842C; // naranja cálido
+$color-accent: #FCB037; // amarillo suave
+$color-background: #FFF4E1; // beige claro
+$color-text: #333333; // texto principal
+$color-text-light: #555555; // texto secundario
+$color-white: #ffffff;
+$color-black: #000000;
+
+/* TIPOGRAFÍAS */
+$font-primary: 'Poppins', sans-serif;
+$font-secondary: 'Roboto', sans-serif;
+
+/* ESPACIADOS */
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 2rem;
+$spacing-lg: 3rem;
+
+/* RADIOS */
+$radius-sm: 6px;
+$radius-md: 10px;
+$radius-lg: 20px;
+
+/* TRANSICIONES */
+$transition-base: all 0.3s ease;
+
+/* SOMBRAS */
+$shadow-light: 0 4px 10px rgba(0, 0, 0, 0.1);

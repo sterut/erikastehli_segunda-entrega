@@ -1,0 +1,56 @@
+/* ===============================
+   📦 MIXINS GENERALES
+   =============================== */
+
+/* FLEX CENTER */
+@mixin flex-center($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+/* GRID CENTER */
+@mixin grid-center {
+  display: grid;
+  place-items: center;
+}
+
+/* SOMBRA SUAVE */
+@mixin shadow-light {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* BOTÓN BASE */
+@mixin button-base($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  border: none;
+  border-radius: $radius-sm;
+  padding: 0.8rem 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: $transition-base;
+
+  &:hover {
+    background-color: darken($bg-color, 8%);
+  }
+}
+
+/* MEDIA QUERIES */
+@mixin respond($breakpoint) {
+  @if $breakpoint == sm {
+    @media (max-width: 576px) { @content; }
+  } @else if $breakpoint == md {
+    @media (max-width: 768px) { @content; }
+  } @else if $breakpoint == lg {
+    @media (max-width: 992px) { @content; }
+  } @else if $breakpoint == xl {
+    @media (max-width: 1200px) { @content; }
+  }
+}
+
+/* TIPOGRAFÍA RESPONSIVE */
+@mixin fluid-text($min, $max) {
+  font-size: clamp($min, 2vw, $max);
+}

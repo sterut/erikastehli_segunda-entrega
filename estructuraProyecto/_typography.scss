@@ -1,0 +1,52 @@
+/* TIPOGRAFÍA GLOBAL */
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  color: $color-text;
+  background-color: $color-background;
+  line-height: 1.6;
+}
+/* ENCABEZADOS */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-secondary;
+  color: $color-black;
+  font-weight: 600;
+  margin-bottom: $spacing-sm;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+/* PÁRRAFOS Y ENLACES */
+p {
+  color: $color-text-light;
+  font-size: 1rem;
+  margin-bottom: $spacing-sm;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+  transition: $transition-base;
+
+  &:hover {
+    color: darken($color-primary, 10%);
+  }
+}
+
+/* BOTONES (base tipográfica) */
+button {
+  font-family: $font-primary;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
